@@ -1,0 +1,18 @@
+@use 'variaveis';
+
+.estreia{
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__elementos{
+        margin-left: 20px;
+        text-align: center;
+        .botao{
+            margin-top: 20px;
+        }
+        
+    }
+    
+}

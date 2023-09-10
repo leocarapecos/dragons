@@ -1,0 +1,68 @@
+@use 'hero';
+@use 'header';
+@use 'estreia';
+@use 'variaveis';
+@use 'elenco';
+
+@font-face{
+    font-family: trajan;
+    src: url(../../assents/fonts/TrajanPro-Regular.woff2);
+    font-weight: 400;
+}
+@font-face{
+    font-family: trajan;
+    src: url(../../assents/fonts/TrajanPro-Bold.woff2);
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'trajan';
+    background-color: variaveis.$backgroundColor;
+}
+
+
+
+.text{
+    color: variaveis.$textColor;
+}
+
+.text-title{
+    
+    color: variaveis.$textColor;
+    font-size: 32px;
+    text-align: center;
+    
+    
+}
+
+.botao{
+    font-family: 'trajan';
+    padding: 10px;
+    color: variaveis.$textColor;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    transition: 1s;
+    
+    
+    &:hover{
+        transform:scale(110%);
+        border-bottom: 1px solid variaveis.$textColor;
+        
+    }
+}
+
+.links{
+    font-size: 20px;
+    color: variaveis.$textColor;
+    text-decoration: none;
+}
+
